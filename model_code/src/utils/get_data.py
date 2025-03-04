@@ -138,7 +138,7 @@ def get_data_test_moe(ak_config):
     return test_feature_numpy,test_label
 
 
-def my_collate_fn(batch):
+def my_collate_fn(batch): # 特征拼接
     res_features_tmp = {}
     labels = []
     for ff in dnn_config["feature_col"]:
